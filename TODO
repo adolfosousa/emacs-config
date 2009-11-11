@@ -1,0 +1,6 @@
+- tirar o snippet 'do' (sempre que dou um espaco depois de um do pipoca um erro no minibuffer)
+- mostrar arquivos abertos recentemente com C-x f
+- highlight nos simbolos do buffer quando o cursor esta em cima de algum
+- PS1 do eshell muito grande (deixar so o diretorio atual)
+- update readme
+- blog post

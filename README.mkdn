@@ -1,0 +1,7 @@
+# My emacs configurations
+
+## What I'm using:
+
+- Yasnippet [yasnippet]
+
+[yasnippet]: http://code.google.com/p/yasnippet/
