@@ -1,6 +1,13 @@
-;;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+;; (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 ;; (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+
+(when (string-match "apple" system-configuration)
+  (create-fontset-from-fontset-spec
+   (concat "-apple-monaco-medium-r-normal--14-*-*-*-*-*-fontset-monaco,"
+           "ascii:-apple-monaco-medium-r-normal--14-100-*-*-m-100-mac-roman"))
+  (setq initial-frame-alist `((font . "fontset-monaco")))
+  (setq default-frame-alist initial-frame-alist))
 
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
@@ -18,14 +25,6 @@
 (setq line-number-mode 1)
 (setq-default indent-tabs-mode nil)
 
-(create-fontset-from-fontset-spec 
- (concat
-  "-apple-monaco-medium-r-normal--14-*-*-*-*-*-fontset-monaco,"
-  "ascii:-apple-monaco-medium-r-normal--14-100-*-*-m-100-mac-roman"))
-
-(setq initial-frame-alist `((font . "fontset-monaco")))(
- setq default-frame-alist initial-frame-alist)
-
 (load "~/.emacs.d/defuns.el")
 (load "~/.emacs.d/bindings.el")
 (load "~/.emacs.d/vendor/nxhtml/autostart.el")
@@ -37,30 +36,30 @@
 
 (require 'windmove)
 (windmove-default-keybindings 'shift)
- 
+
 (require 'highline)
 (highline-mode)
- 
+
 (add-to-list 'load-path "~/.emacs.d/vendor/yasnippet")
 (require 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
 (yas/load-directory "~/.emacs.d/vendor/yasnippets-rails/rails-snippets")
- 
+
 (add-to-list 'load-path "~/.emacs.d/vendor/textmate")
 (require 'textmate)
 (textmate-mode)
- 
+
 (add-to-list 'load-path "~/.emacs.d/vendor/maxframe")
 (require 'maxframe)
 (setq mf-max-width 1280)
 (add-hook 'window-setup-hook 'maximize-frame t)
- 
+
 (add-to-list 'load-path "~/.emacs.d/vendor/whitespace")
 (require 'whitespace)
 (setq whitespace-style '(trailing lines space-before-tab indentation space-after-tab)
       whitespace-line-column 100)
- 
+
 (load-file "~/.emacs.d/vendor/cedet/common/cedet.el")
 (add-to-list 'load-path "~/.emacs.d/vendor/ecb")
 (require 'ecb)
