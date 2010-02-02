@@ -77,7 +77,7 @@ Symbols matching the text at point are put first in the completion list."
           '(lambda ()
 	     (if (and (not (null buffer-file-name)) (file-writable-p buffer-file-name))
 		 (flymake-mode))
-		 (ruby-electric-mode t)
+             (ruby-electric-mode t)
 	     ))
 
 (defun yas/advise-indent-function (function-symbol)
@@ -98,3 +98,8 @@ Symbols matching the text at point are put first in the completion list."
 (add-hook 'ruby-mode-hook 'indentation-fix)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(defun refresh-file ()
+  (interactive)
+  (revert-buffer t t t)
+  )
