@@ -8,7 +8,22 @@
 (setq vc-handled-backends nil)
 (cua-mode nil)
 (setq gist-view-gist t)
+(fset 'yes-or-no-p 'y-or-n-p)
+(follow-mode t)
+(setq search-highlight t)
+(setq column-number-mode t)
+(setq-default indent-tabs-mode nil)
 
-;; works in both aquamacs and carbon
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))
+(when (functionp 'menu-bar-mode)
+  (menu-bar-mode 1))
+(when (functionp 'scroll-bar-mode)
+  (scroll-bar-mode 1))
+
+(when (string-match "apple" system-configuration)
+  (create-fontset-from-fontset-spec
+   (concat "-apple-monaco-medium-r-normal--14-*-*-*-*-*-fontset-monaco,"
+           "ascii:-apple-monaco-medium-r-normal--14-100-*-*-m-100-mac-roman"))
+  (setq initial-frame-alist `((font . "fontset-monaco")))
+  (setq default-frame-alist initial-frame-alist))

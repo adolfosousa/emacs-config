@@ -1,32 +1,14 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-(load "custom/global")
-
-;; (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-;; (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-
-(when (string-match "apple" system-configuration)
-  (create-fontset-from-fontset-spec
-   (concat "-apple-monaco-medium-r-normal--14-*-*-*-*-*-fontset-monaco,"
-           "ascii:-apple-monaco-medium-r-normal--14-100-*-*-m-100-mac-roman"))
-  (setq initial-frame-alist `((font . "fontset-monaco")))
-  (setq default-frame-alist initial-frame-alist))
+(load "~/.emacs.d/custom/global")
+(load "~/.emacs.d/custom/defuns")
+(load "~/.emacs.d/custom/bindings")
 
 (transient-mark-mode 1)
 
 (show-paren-mode)
 (setq show-paren-style 'parentheses)
 
-(fset 'yes-or-no-p 'y-or-n-p)
-(follow-mode t)
-(setq search-highlight t)
-(setq column-number-mode t)
-(setq line-number-mode 1)
-(setq-default indent-tabs-mode nil)
-
-(load "~/.emacs.d/custom/defuns.el")
-(load "~/.emacs.d/custom/bindings.el")
 (load "~/.emacs.d/vendor/nxhtml/autostart.el")
 
 (require 'windmove)
@@ -85,5 +67,3 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  )
-
-;;; init.el ends here
