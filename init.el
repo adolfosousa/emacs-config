@@ -3,12 +3,6 @@
 (load "~/.emacs.d/custom/global")
 (load "~/.emacs.d/custom/defuns")
 (load "~/.emacs.d/custom/bindings")
-
-(transient-mark-mode 1)
-
-(show-paren-mode)
-(setq show-paren-style 'parentheses)
-
 (load "~/.emacs.d/vendor/nxhtml/autostart.el")
 
 (require 'windmove)
@@ -51,10 +45,10 @@
 (setq ruby-block-highlight-toggle 'overlay)
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(ecb-layout-window-sizes (quote (("left15" (0.26282051282051283 . 0.4772727272727273) (0.26282051282051283 . 0.5)) ("left14" (0.1962025316455696 . 0.7272727272727273) (0.1962025316455696 . 0.25)) ("left8" (0.2088607594936709 . 0.2727272727272727) (0.2088607594936709 . 0.22727272727272727) (0.2088607594936709 . 0.29545454545454547) (0.2088607594936709 . 0.18181818181818182)))))
  '(ecb-options-version "2.40")
  '(ecb-source-path (quote ("~/projects")))
@@ -62,8 +56,8 @@
 (setq ecb-layout-name "left15")
 
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  )

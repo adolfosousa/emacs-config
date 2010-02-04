@@ -13,6 +13,9 @@
 (setq search-highlight t)
 (setq column-number-mode t)
 (setq-default indent-tabs-mode nil)
+(transient-mark-mode 1)
+(show-paren-mode)
+(setq show-paren-style 'parentheses)
 
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))

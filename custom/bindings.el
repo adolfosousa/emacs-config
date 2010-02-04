@@ -5,6 +5,6 @@
 (global-set-key (kbd "M-a")   'mark-whole-buffer)
 (global-set-key [f5] 'refresh-file)
 
-;; (global-set-key (kbd "M-s") 'save-buffer)
-;; (global-set-key [M-right] 'end-of-line)
-;; (global-set-key [M-left] 'beginning-of-line)
+;(global-set-key (kbd "M-s") 'save-buffer)
+;(global-set-key [M-right] 'end-of-line)
+;(global-set-key [M-left] 'beginning-of-line)
