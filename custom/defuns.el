@@ -63,7 +63,7 @@ Symbols matching the text at point are put first in the completion list."
 (defun flymake-ruby-init ()
   (let* ((temp-file   (flymake-init-create-temp-buffer-copy
                        'flymake-create-temp-inplace))
-	 (local-file  (file-relative-name
+         (local-file  (file-relative-name
                        temp-file
                        (file-name-directory buffer-file-name))))
     (list "ruby" (list "-c" local-file))))
@@ -75,10 +75,10 @@ Symbols matching the text at point are put first in the completion list."
 
 (add-hook 'ruby-mode-hook
           '(lambda ()
-	     (if (and (not (null buffer-file-name)) (file-writable-p buffer-file-name))
-		 (flymake-mode))
+             (if (and (not (null buffer-file-name)) (file-writable-p buffer-file-name))
+                 (flymake-mode))
              (ruby-electric-mode t)
-	     ))
+             ))
 
 (defun yas/advise-indent-function (function-symbol)
   (eval `(defadvice ,function-symbol (around yas/try-expand-first activate)
@@ -103,3 +103,16 @@ Symbols matching the text at point are put first in the completion list."
   (interactive)
   (revert-buffer t t t)
   )
+
+;for loading libraries in from the vendor directory
+(defun vendor (library)
+  (let* ((file (symbol-name library))
+         (normal (concat "~/.emacs.d/vendor/" file))
+         (suffix (concat normal ".el"))
+         (defunkt (concat "~/.emacs.d/defunkt/" file)))
+    (cond
+     ((file-directory-p normal) (add-to-list 'load-path normal) (require library))
+     ((file-directory-p suffix) (add-to-list 'load-path suffix) (require library))
+     ((file-exists-p suffix) (require library)))
+    (when (file-exists-p (concat defunkt ".el"))
+      (load defunkt))))
