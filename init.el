@@ -1,3 +1,7 @@
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
 ;; (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 ;; (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
@@ -8,10 +12,6 @@
            "ascii:-apple-monaco-medium-r-normal--14-100-*-*-m-100-mac-roman"))
   (setq initial-frame-alist `((font . "fontset-monaco")))
   (setq default-frame-alist initial-frame-alist))
-
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-(prefer-coding-system 'utf-8)
 
 (transient-mark-mode 1)
 
@@ -29,16 +29,8 @@
 (load "~/.emacs.d/bindings.el")
 (load "~/.emacs.d/vendor/nxhtml/autostart.el")
 
-(when
-    (load
-     (expand-file-name "~/.emacs.d/elpa/package.el"))
-  (package-initialize))
-
 (require 'windmove)
 (windmove-default-keybindings 'shift)
-
-(require 'highline)
-(highline-mode)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/yasnippet")
 (require 'yasnippet)
