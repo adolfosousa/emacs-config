@@ -25,8 +25,8 @@
 (setq line-number-mode 1)
 (setq-default indent-tabs-mode nil)
 
-(load "~/.emacs.d/defuns.el")
-(load "~/.emacs.d/bindings.el")
+(load "~/.emacs.d/custom/defuns.el")
+(load "~/.emacs.d/custom/bindings.el")
 (load "~/.emacs.d/vendor/nxhtml/autostart.el")
 
 (require 'windmove)
