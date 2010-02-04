@@ -1,6 +1,6 @@
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-(prefer-coding-system 'utf-8)
+(add-to-list 'load-path "~/.emacs.d/vendor")
+
+(load "custom/global")
 
 ;; (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 ;; (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
