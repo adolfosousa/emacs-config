@@ -29,44 +29,44 @@
   (setq initial-frame-alist `((font . "fontset-monaco")))
   (setq default-frame-alist initial-frame-alist))
 
-(require 'windmove)
-(windmove-default-keybindings 'shift)
-
-(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet")
-(require 'yasnippet)
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
-(yas/load-directory "~/.emacs.d/vendor/yasnippets-rails/rails-snippets")
-
-(add-to-list 'load-path "~/.emacs.d/vendor/textmate")
-(require 'textmate)
-(textmate-mode)
-
-(add-to-list 'load-path "~/.emacs.d/vendor/maxframe")
-(require 'maxframe)
-(setq mf-max-width 1280)
-(add-hook 'window-setup-hook 'maximize-frame t)
-
-(add-to-list 'load-path "~/.emacs.d/vendor/whitespace")
-(require 'whitespace)
-(setq whitespace-style '(trailing lines space-before-tab indentation space-after-tab)
-      whitespace-line-column 100)
-
-(load-file "~/.emacs.d/vendor/cedet/common/cedet.el")
-(add-to-list 'load-path "~/.emacs.d/vendor/ecb")
-(require 'ecb)
-(require 'ecb-autoloads)
-
-(setq load-path (cons (expand-file-name "~/.emacs.d/vendor/rails-reloaded") load-path))
-(require 'rails-autoload)
-
-(add-to-list 'load-path "~/.emacs.d/vendor/ruby-electric")
-(require 'ruby-electric)
-
-(add-to-list 'load-path "~/.emacs.d/vendor/ruby-block")
-(require 'ruby-block)
-(ruby-block-mode t)
-(setq ruby-block-highlight-toggle 'overlay)
+;(require 'windmove)
+;(windmove-default-keybindings 'shift)
+;
+;(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet")
+;(require 'yasnippet)
+;(yas/initialize)
+;(yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
+;(yas/load-directory "~/.emacs.d/vendor/yasnippets-rails/rails-snippets")
+;
+;(add-to-list 'load-path "~/.emacs.d/vendor/textmate")
+;(require 'textmate)
+;(textmate-mode)
+;
+;(add-to-list 'load-path "~/.emacs.d/vendor/maxframe")
+;(require 'maxframe)
+;(setq mf-max-width 1280)
+;(add-hook 'window-setup-hook 'maximize-frame t)
+;
+;(add-to-list 'load-path "~/.emacs.d/vendor/whitespace")
+;(require 'whitespace)
+;(setq whitespace-style '(trailing lines space-before-tab indentation space-after-tab)
+;      whitespace-line-column 100)
+;
+;(load-file "~/.emacs.d/vendor/cedet/common/cedet.el")
+;(add-to-list 'load-path "~/.emacs.d/vendor/ecb")
+;(require 'ecb)
+;(require 'ecb-autoloads)
+;
+;(setq load-path (cons (expand-file-name "~/.emacs.d/vendor/rails-reloaded") load-path))
+;(require 'rails-autoload)
+;
+;(add-to-list 'load-path "~/.emacs.d/vendor/ruby-electric")
+;(require 'ruby-electric)
+;
+;(add-to-list 'load-path "~/.emacs.d/vendor/ruby-block")
+;(require 'ruby-block)
+;(ruby-block-mode t)
+;(setq ruby-block-highlight-toggle 'overlay)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
