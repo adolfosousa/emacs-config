@@ -4,3 +4,6 @@
 [submodule "vendor/markdown-mode"]
 	path = vendor/markdown-mode
 	url = git://github.com/defunkt/markdown-mode.git
+[submodule "vendor/cheat"]
+	path = vendor/cheat
+	url = git://github.com/defunkt/cheat.el.git
