@@ -19,3 +19,6 @@
 [submodule "vendor/open-file-in-github"]
 	path = vendor/open-file-in-github
 	url = git://gist.github.com/170861.git
+[submodule "vendor/zencoding"]
+	path = vendor/zencoding
+	url = git://github.com/chrisdone/zencoding.git
