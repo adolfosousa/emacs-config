@@ -13,3 +13,6 @@
 [submodule "vendor/textmate"]
 	path = vendor/textmate
 	url = git://github.com/defunkt/textmate.el.git
+[submodule "vendor/yaml-mode"]
+	path = vendor/yaml-mode
+	url = git://github.com/yoshiki/yaml-mode.git
