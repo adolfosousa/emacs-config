@@ -1,10 +1,10 @@
-[submodule "rinari"]
+[submodule "vendor/rinari"]
 	path = vendor/rinari
 	url = git://github.com/eschulte/rinari.git
-[submodule "markdown-mode"]
+[submodule "vendor/markdown-mode"]
 	path = vendor/markdown-mode
 	url = git://github.com/defunkt/markdown-mode.git
-[submodule "cheat.el"]
+[submodule "vendor/cheat.el"]
 	path = vendor/cheat.el
 	url = git://github.com/defunkt/cheat.el.git
 [submodule "gist.el"]
@@ -19,3 +19,6 @@
 [submodule "vendor/open-file-in-github"]
 	path = vendor/open-file-in-github
 	url = git://gist.github.com/170861.git
+[submodule "vendor/zencoding"]
+  path = vendor/zencoding
+  url = git://github.com/chrisdone/zencoding.git
