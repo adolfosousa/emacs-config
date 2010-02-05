@@ -2,5 +2,8 @@
 
 (load "~/.emacs.d/custom/defuns")
 (load "~/.emacs.d/custom/bindings")
-(load "~/.emacs.d/vendor/nxhtml/autostart")
 (load "~/.emacs.d/custom/global")
+
+(vendor 'rinari)
+
+;(load "~/.emacs.d/vendor/nxhtml/autostart")
