@@ -5,5 +5,5 @@
 (load "~/.emacs.d/custom/global")
 
 (vendor 'rinari)
-
-;(load "~/.emacs.d/vendor/nxhtml/autostart")
+(vendor 'markdown-mode)
+(vendor 'cheat)

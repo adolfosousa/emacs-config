@@ -3,7 +3,7 @@
 	url = git://github.com/eschulte/rinari.git
 [submodule "vendor/markdown-mode"]
 	path = vendor/markdown-mode
-	url = git://github.com/defunkt/markdown-mode.git
+	url = git://jblevins.org/git/markdown-mode.git
 [submodule "vendor/cheat"]
 	path = vendor/cheat
 	url = git://github.com/defunkt/cheat.el.git
