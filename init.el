@@ -14,8 +14,8 @@
 (vendor 'yaml-mode)
 (vendor 'open-file-in-github)
 (vendor 'zencoding)
-(vendor 'maxframe-el)
+(vendor 'maxframe)
 
-(load (concat custom_path "zencoding-load"))
+(load (concat custom_path "zencoding"))
 (load (concat custom_path "windmove"))
 (load (concat custom_path "maxframe"))
