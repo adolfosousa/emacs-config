@@ -7,3 +7,4 @@
 (vendor 'rinari)
 (vendor 'markdown-mode)
 (vendor 'cheat)
+(vendor 'gist)
