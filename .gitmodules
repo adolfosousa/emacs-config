@@ -1,9 +1,6 @@
 [submodule "vendor/rinari"]
 	path = vendor/rinari
 	url = git://github.com/eschulte/rinari.git
-[submodule "vendor/markdown-mode"]
-	path = vendor/markdown-mode
-	url = git://jblevins.org/git/markdown-mode.git
 [submodule "vendor/cheat"]
 	path = vendor/cheat
 	url = git://github.com/defunkt/cheat.el.git
@@ -19,6 +16,9 @@
 [submodule "vendor/open-file-in-github"]
 	path = vendor/open-file-in-github
 	url = git://gist.github.com/170861.git
-[submodule "vendor/zencoding"]
-	path = vendor/zencoding
+[submodule "vendor/zencoding-mode"]
+	path = vendor/zencoding-mode
 	url = git://github.com/chrisdone/zencoding.git
+[submodule "vendor/markdown-mode"]
+	path = vendor/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
