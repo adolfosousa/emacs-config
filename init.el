@@ -1,8 +1,9 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-(load "~/.emacs.d/custom/defuns")
-(load "~/.emacs.d/custom/bindings")
-(load "~/.emacs.d/custom/global")
+(setq custom_path "~/.emacs.d/custom/")
+(load (concat custom_path "defuns"))
+(load (concat custom_path "bindings"))
+(load (concat custom_path "global"))
 
 (vendor 'rinari)
 (vendor 'markdown-mode)
@@ -14,4 +15,4 @@
 (vendor 'open-file-in-github)
 (vendor 'zencoding)
 
-(load "~/.emacs.d/custom/zencoding-load")
+(load (concat custom_path "zencoding-load"))
