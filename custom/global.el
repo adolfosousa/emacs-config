@@ -29,18 +29,11 @@
   (setq initial-frame-alist `((font . "fontset-monaco")))
   (setq default-frame-alist initial-frame-alist))
 
-;(require 'windmove)
-;(windmove-default-keybindings 'shift)
-;
 ;(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet")
 ;(require 'yasnippet)
 ;(yas/initialize)
 ;(yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
 ;(yas/load-directory "~/.emacs.d/vendor/yasnippets-rails/rails-snippets")
-;
-;(add-to-list 'load-path "~/.emacs.d/vendor/textmate")
-;(require 'textmate)
-;(textmate-mode)
 ;
 ;(add-to-list 'load-path "~/.emacs.d/vendor/maxframe")
 ;(require 'maxframe)

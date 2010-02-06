@@ -16,3 +16,4 @@
 (vendor 'zencoding)
 
 (load (concat custom_path "zencoding-load"))
+(load (concat custom_path "windmove"))
