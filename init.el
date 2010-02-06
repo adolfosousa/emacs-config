@@ -13,3 +13,5 @@
 (vendor 'yaml-mode)
 (vendor 'open-file-in-github)
 (vendor 'zencoding)
+
+(load "~/.emacs.d/custom/zencoding-load")
