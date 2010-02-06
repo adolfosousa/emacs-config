@@ -11,3 +11,4 @@
 (vendor 'textmate)
 (textmate-mode)
 (vendor 'yaml-mode)
+(vendor 'open-file-in-github)
