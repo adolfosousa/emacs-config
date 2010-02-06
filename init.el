@@ -10,3 +10,4 @@
 (vendor 'gist)
 (vendor 'textmate)
 (textmate-mode)
+(vendor 'yaml-mode)
