@@ -8,3 +8,5 @@
 (vendor 'markdown-mode)
 (vendor 'cheat)
 (vendor 'gist)
+(vendor 'textmate)
+(textmate-mode)
