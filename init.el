@@ -18,7 +18,9 @@
 (vendor 'rspec-mode)
 (vendor 'yasnippet)
 (vendor 'ruby-electric)
+(vendor 'ruby-block)
 
 (load (concat custom_path "windmove"))
 (load (concat custom_path "cedet"))
 (load (concat custom_path "ecb"))
+(load (concat custom_path "ruby-block"))

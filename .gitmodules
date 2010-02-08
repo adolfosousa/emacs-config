@@ -49,3 +49,6 @@
 [submodule "vendor/ruby-electric"]
 	path = vendor/ruby-electric
 	url = git://github.com/rodimius/emacs-ruby-electric.git
+[submodule "vendor/ruby-block"]
+	path = vendor/ruby-block
+	url = git://github.com/adolfosousa/ruby-block.el.git

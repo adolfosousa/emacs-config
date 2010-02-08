@@ -32,8 +32,3 @@
            "ascii:-apple-monaco-medium-r-normal--14-100-*-*-m-100-mac-roman"))
   (setq initial-frame-alist `((font . "fontset-monaco")))
   (setq default-frame-alist initial-frame-alist))
-
-;(add-to-list 'load-path "~/.emacs.d/vendor/ruby-block")
-;(require 'ruby-block)
-;(ruby-block-mode t)
-;(setq ruby-block-highlight-toggle 'overlay)
