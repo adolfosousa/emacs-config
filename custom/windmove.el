@@ -1,2 +1,2 @@
 (require 'windmove)
-(windmove-default-keybindings 'shift)
+(windmove-default-keybindings 'meta)
