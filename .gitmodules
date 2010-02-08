@@ -31,3 +31,6 @@
 [submodule "vendor/ecb"]
 	path = vendor/ecb
 	url = git://github.com/adolfosousa/ecb.git
+[submodule "vendor/magit"]
+	path = vendor/magit
+	url = git://github.com/technomancy/magit.git

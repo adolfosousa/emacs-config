@@ -14,6 +14,7 @@
 (vendor 'open-file-in-github)
 (vendor 'zencoding)
 (vendor 'maxframe)
+(vendor 'magit)
 
 (load (concat custom_path "windmove"))
 (load (concat custom_path "cedet"))
