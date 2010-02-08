@@ -16,6 +16,7 @@
 (vendor 'maxframe)
 (vendor 'magit)
 (vendor 'rspec-mode)
+(vendor 'yasnippet)
 
 (load (concat custom_path "windmove"))
 (load (concat custom_path "cedet"))

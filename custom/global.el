@@ -33,12 +33,6 @@
   (setq initial-frame-alist `((font . "fontset-monaco")))
   (setq default-frame-alist initial-frame-alist))
 
-;(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet")
-;(require 'yasnippet)
-;(yas/initialize)
-;(yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
-;(yas/load-directory "~/.emacs.d/vendor/yasnippets-rails/rails-snippets")
-;
 ;(add-to-list 'load-path "~/.emacs.d/vendor/whitespace")
 ;(require 'whitespace)
 ;(setq whitespace-style '(trailing lines space-before-tab indentation space-after-tab)
