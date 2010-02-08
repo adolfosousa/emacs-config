@@ -17,6 +17,7 @@
 (vendor 'magit)
 (vendor 'rspec-mode)
 (vendor 'yasnippet)
+(vendor 'ruby-electric)
 
 (load (concat custom_path "windmove"))
 (load (concat custom_path "cedet"))

@@ -46,3 +46,6 @@
 [submodule "vendor/yasnippets-rails"]
 	path = vendor/yasnippets-rails
 	url = git://github.com/eschulte/yasnippets-rails.git
+[submodule "vendor/ruby-electric"]
+	path = vendor/ruby-electric
+	url = git://github.com/rodimius/emacs-ruby-electric.git

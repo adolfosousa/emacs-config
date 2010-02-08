@@ -33,17 +33,6 @@
   (setq initial-frame-alist `((font . "fontset-monaco")))
   (setq default-frame-alist initial-frame-alist))
 
-;(add-to-list 'load-path "~/.emacs.d/vendor/whitespace")
-;(require 'whitespace)
-;(setq whitespace-style '(trailing lines space-before-tab indentation space-after-tab)
-;      whitespace-line-column 100)
-;
-;(setq load-path (cons (expand-file-name "~/.emacs.d/vendor/rails-reloaded") load-path))
-;(require 'rails-autoload)
-;
-;(add-to-list 'load-path "~/.emacs.d/vendor/ruby-electric")
-;(require 'ruby-electric)
-;
 ;(add-to-list 'load-path "~/.emacs.d/vendor/ruby-block")
 ;(require 'ruby-block)
 ;(ruby-block-mode t)
