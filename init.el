@@ -15,6 +15,7 @@
 (vendor 'zencoding)
 (vendor 'maxframe)
 (vendor 'magit)
+(vendor 'rspec-mode)
 
 (load (concat custom_path "windmove"))
 (load (concat custom_path "cedet"))
