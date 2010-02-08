@@ -16,6 +16,8 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+(global-hl-line-mode t)
+(set-face-background 'hl-line "light yellow")
 
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))
