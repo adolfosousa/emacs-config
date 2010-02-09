@@ -2,7 +2,7 @@ desc "Installs emacs-config"
 task :default => [:init_submodules, :create_link] do
 end
 
-desc "Init git submodules in order to install plugins"
+desc "Inits git submodules in order to install plugins"
 task :init_submodules do
   update_git_submodules
   cd('vendor/rinari', :verbose => true)
@@ -14,9 +14,9 @@ task :init_submodules do
   go_back
 end
 
-desc "Create link to emacs-config directory"
+desc "Points the link ~/.emacs.d to this directory"
 task :create_link do
-  system("sudo ln -s  #{Dir.pwd} ~/.test.d")
+  system("sudo ln -s  #{Dir.pwd} ~/.emacs.d")
 end
 
 def update_git_submodules
@@ -24,6 +24,6 @@ def update_git_submodules
 end
 
 def go_back
-  cd('..')
-  cd('..')
+  cd('..', :verbose => false)
+  cd('..', :verbose => false)
 end
