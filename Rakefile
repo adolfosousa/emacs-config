@@ -24,5 +24,6 @@ def update_git_submodules
 end
 
 def go_back
-  cd(' ../..')
+  cd('..')
+  cd('..')
 end

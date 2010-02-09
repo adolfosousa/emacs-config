@@ -25,9 +25,6 @@
 [submodule "vendor/maxframe"]
 	path = vendor/maxframe
 	url = git://github.com/rmm5t/maxframe-el.git
-[submodule "vendor/cedet"]
-	path = vendor/cedet
-	url = git://github.com/emacs-pkg-mirrors/cedet.git
 [submodule "vendor/ecb"]
 	path = vendor/ecb
 	url = git://github.com/adolfosousa/ecb.git
