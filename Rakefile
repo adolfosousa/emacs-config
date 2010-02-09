@@ -16,7 +16,8 @@ end
 
 desc "Points the link ~/.emacs.d to this directory"
 task :create_link do
-  system("sudo ln -s  #{Dir.pwd} ~/.emacs.d")
+  system("rm -rf ~/.emacs.d")
+  system("ln -s #{Dir.pwd} ~/.emacs.d")
 end
 
 def update_git_submodules
