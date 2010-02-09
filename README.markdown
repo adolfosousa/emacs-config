@@ -6,9 +6,10 @@ This is my emacs configuration. I'm using Carbon Emacs on a MacBook, however thi
 Installation
 ------------
 
-    $ mkdir projects
-    $ git clone git://github.com/adolfosousa/emacs-config.git
-    $ rake
+    mkdir projects  ## or any other directory you want
+    cd projects/
+    git clone git://github.com/adolfosousa/emacs-config.git
+    rake
 
 What I'm using
 --------------
