@@ -115,3 +115,8 @@ Symbols matching the text at point are put first in the completion list."
      ((file-exists-p suffix) (require library)))
     (when (file-exists-p (concat custom ".el"))
       (load custom))))
+
+(defun word-count ()
+  "Count words in buffer"
+  (interactive)
+  (shell-command-on-region (point-min) (point-max) "wc -w"))
