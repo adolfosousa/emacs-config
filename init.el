@@ -21,6 +21,7 @@
 (vendor 'ruby-block)
 (vendor 'grep-a-lot)
 (vendor 'rails)
+(vendor 'rhtml-mode)
 
 (load (concat custom_path "windmove"))
 (load (concat custom_path "cedet"))

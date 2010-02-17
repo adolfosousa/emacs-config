@@ -58,3 +58,6 @@
 [submodule "vendor/rails"]
 	path = vendor/rails
 	url = git://github.com/remvee/emacs-rails.git
+[submodule "vendor/rhtml-mode"]
+	path = vendor/rhtml-mode
+	url = git://github.com/eschulte/rhtml.git
