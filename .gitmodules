@@ -52,3 +52,6 @@
 [submodule "vendor/cedet"]
 	path = vendor/cedet
 	url = git://github.com/emacs-pkg-mirrors/cedet.git
+[submodule "vendor/grep-a-lot"]
+	path = vendor/grep-a-lot
+	url = git://github.com/adolfosousa/emacs-grep-a-lot.git
