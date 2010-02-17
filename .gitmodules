@@ -55,3 +55,6 @@
 [submodule "vendor/grep-a-lot"]
 	path = vendor/grep-a-lot
 	url = git://github.com/adolfosousa/emacs-grep-a-lot.git
+[submodule "vendor/rails"]
+	path = vendor/rails
+	url = git://github.com/remvee/emacs-rails.git
