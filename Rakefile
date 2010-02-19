@@ -1,5 +1,5 @@
 desc "Installs emacs-config"
-task :default => [:init_submodules, :create_link, :checkout_master] do
+task :default => [:init_submodules, :create_link] do
 end
 
 desc "Inits git submodules in order to install plugins"
@@ -20,8 +20,8 @@ task :create_link do
   system("ln -s #{Dir.pwd} ~/.emacs.d")
 end
 
-desc "Checks out all submodules to master"
-task :checkout_master do
+desc "Checks out all submodules to master and updates them"
+task :checkout_master_and_update do
   system("git submodule foreach 'git checkout master'")
   system("git submodule update")
 end
