@@ -64,3 +64,6 @@
 [submodule "vendor/js2"]
 	path = vendor/js2
 	url = git://github.com/adolfosousa/emacs-js2-mode.git
+[submodule "vendor/js-comint"]
+	path = vendor/js-comint
+	url = git://github.com/adolfosousa/emacs-js-comint-mode.git

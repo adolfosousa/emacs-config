@@ -22,6 +22,7 @@
 (vendor 'grep-a-lot)
 (vendor 'rails)
 (vendor 'rhtml-mode)
+(vendor 'js-comint)
 
 (load (concat custom_path "windmove"))
 (load (concat custom_path "cedet"))
