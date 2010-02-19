@@ -12,7 +12,7 @@
 (vendor 'textmate)
 (vendor 'yaml-mode)
 (vendor 'open-file-in-github)
-(vendor 'zencoding)
+(vendor 'zencoding-mode)
 (vendor 'maxframe)
 (vendor 'magit)
 (vendor 'rspec-mode)
