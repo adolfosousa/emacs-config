@@ -61,3 +61,6 @@
 [submodule "vendor/zencoding-mode"]
 	path = vendor/zencoding-mode
 	url = git://github.com/chrisdone/zencoding.git
+[submodule "vendor/js2"]
+	path = vendor/js2
+	url = git://github.com/adolfosousa/emacs-js2-mode.git
