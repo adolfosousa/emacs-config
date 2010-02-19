@@ -58,6 +58,3 @@
 [submodule "vendor/rhtml-mode"]
 	path = vendor/rhtml-mode
 	url = git://github.com/eschulte/rhtml.git
-[submodule "vendor/zencoding"]
-	path = vendor/zencoding
-	url = git://github.com/chrisdone/zencoding.git
