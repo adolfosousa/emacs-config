@@ -4,9 +4,9 @@ end
 
 desc "Inits git submodules in order to install plugins"
 task :init_submodules do
-  update_git_submodules
+  init_git_submodules
   cd('vendor/rinari', :verbose => true)
-  update_git_submodules
+  init_git_submodules
   go_back
   cd('vendor/cedet', :verbose => true)
   system('make MAKEINFO=echo')
@@ -21,12 +21,11 @@ task :create_link do
 end
 
 desc "Checks out all submodules to master and updates them"
-task :checkout_master_and_update do
-  system("git submodule foreach 'git checkout master'")
-  system("git submodule update")
+task :update_submodules do
+  system("git submodule foreach 'git checkout master && git pull origin master'")
 end
 
-def update_git_submodules
+def init_git_submodules
   system('git submodule update --init')
 end
 
