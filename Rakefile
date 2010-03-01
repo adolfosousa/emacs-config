@@ -1,6 +1,8 @@
+task :default => :install
+
+
 desc "Installs emacs-config"
-task :default => [:init_submodules, :create_link] do
-end
+task :install => [:init_submodules, :create_link]
 
 desc "Inits git submodules in order to install plugins"
 task :init_submodules do
