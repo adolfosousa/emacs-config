@@ -104,6 +104,16 @@ Symbols matching the text at point are put first in the completion list."
   (revert-buffer t t t)
   )
 
+(defun word-count ()
+  "Count words in buffer"
+  (interactive)
+  (shell-command-on-region (point-min) (point-max) "wc -w"))
+
+(defun set-exec-path-from-shell-PATH ()
+  (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PATH'")))
+    (setenv "PATH" path-from-shell)
+    (setq exec-path (split-string path-from-shell path-separator))))
+
 (defun vendor (library)
   (let* ((file (symbol-name library))
          (normal (concat "~/.emacs.d/vendor/" file))
@@ -115,8 +125,3 @@ Symbols matching the text at point are put first in the completion list."
      ((file-exists-p suffix) (require library)))
     (when (file-exists-p (concat custom ".el"))
       (load custom))))
-
-(defun word-count ()
-  "Count words in buffer"
-  (interactive)
-  (shell-command-on-region (point-min) (point-max) "wc -w"))
