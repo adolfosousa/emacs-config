@@ -26,9 +26,14 @@
 (when (functionp 'scroll-bar-mode)
   (scroll-bar-mode 1))
 
-(when (string-match "apple" system-configuration)
+(when (equal system-type 'darwin)
   (create-fontset-from-fontset-spec
    (concat "-apple-monaco-medium-r-normal--14-*-*-*-*-*-fontset-monaco,"
            "ascii:-apple-monaco-medium-r-normal--14-100-*-*-m-100-mac-roman"))
   (setq initial-frame-alist `((font . "fontset-monaco")))
   (setq default-frame-alist initial-frame-alist))
+  
+(when (equal system-type 'darwin)
+  ;; When started from Emacs.app or similar, ensure $PATH
+   ;; is the same the user would see in Terminal.app
+  (if window-system (set-exec-path-from-shell-PATH)))
