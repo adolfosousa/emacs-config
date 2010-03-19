@@ -15,6 +15,8 @@
   (untabify-buffer)
   (delete-trailing-whitespace))
 
+(add-hook 'before-save-hook 'cleanup-buffer)
+
 (defun ido-imenu ()
   "Update the imenu index and then use ido to select a symbol to navigate to.
 Symbols matching the text at point are put first in the completion list."
@@ -96,8 +98,6 @@ Symbols matching the text at point are put first in the completion list."
   (local-set-key [return] 'reindent-then-newline-and-indent)
   (setq tab-width 2))
 (add-hook 'ruby-mode-hook 'indentation-fix)
-
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (defun refresh-file ()
   (interactive)
