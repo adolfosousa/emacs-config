@@ -15,7 +15,7 @@
   (untabify-buffer)
   (delete-trailing-whitespace))
 
-(add-hook 'before-save-hook 'cleanup-buffer)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (defun ido-imenu ()
   "Update the imenu index and then use ido to select a symbol to navigate to.
