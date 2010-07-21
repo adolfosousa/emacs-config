@@ -40,6 +40,7 @@ end
 
 def go_back_twice
   go_back
+  go_back
 end
 
 def get_mustache
