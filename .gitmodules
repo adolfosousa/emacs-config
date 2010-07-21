@@ -1,3 +1,69 @@
 [submodule "vendor/rinari"]
 	path = vendor/rinari
 	url = git://github.com/eschulte/rinari.git
+[submodule "vendor/cheat"]
+	path = vendor/cheat
+	url = git://github.com/defunkt/cheat.el.git
+[submodule "vendor/gist"]
+	path = vendor/gist
+	url = git://github.com/defunkt/gist.el.git
+[submodule "vendor/textmate"]
+	path = vendor/textmate
+	url = git://github.com/defunkt/textmate.el.git
+[submodule "vendor/yaml-mode"]
+	path = vendor/yaml-mode
+	url = git://github.com/yoshiki/yaml-mode.git
+[submodule "vendor/open-file-in-github"]
+	path = vendor/open-file-in-github
+	url = git://gist.github.com/170861.git
+[submodule "vendor/markdown-mode"]
+	path = vendor/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
+[submodule "vendor/maxframe"]
+	path = vendor/maxframe
+	url = git://github.com/rmm5t/maxframe-el.git
+[submodule "vendor/ecb"]
+	path = vendor/ecb
+	url = git://github.com/adolfosousa/ecb.git
+[submodule "vendor/magit"]
+	path = vendor/magit
+	url = git://github.com/technomancy/magit.git
+[submodule "vendor/rspec-mode"]
+	path = vendor/rspec-mode
+	url = git://github.com/pezra/rspec-mode.git
+[submodule "vendor/yasnippet"]
+	path = vendor/yasnippet
+	url = git://github.com/adolfosousa/yasnippet.git
+[submodule "vendor/yasnippets-rspec"]
+	path = vendor/yasnippets-rspec
+	url = git://github.com/gary/yasnippets-rspec.git
+[submodule "vendor/yasnippets-rails"]
+	path = vendor/yasnippets-rails
+	url = git://github.com/eschulte/yasnippets-rails.git
+[submodule "vendor/ruby-electric"]
+	path = vendor/ruby-electric
+	url = git://github.com/rodimius/emacs-ruby-electric.git
+[submodule "vendor/ruby-block"]
+	path = vendor/ruby-block
+	url = git://github.com/adolfosousa/ruby-block.el.git
+[submodule "vendor/cedet"]
+	path = vendor/cedet
+	url = git://github.com/emacs-pkg-mirrors/cedet.git
+[submodule "vendor/grep-a-lot"]
+	path = vendor/grep-a-lot
+	url = git://github.com/adolfosousa/emacs-grep-a-lot.git
+[submodule "vendor/rails"]
+	path = vendor/rails
+	url = git://github.com/remvee/emacs-rails.git
+[submodule "vendor/rhtml-mode"]
+	path = vendor/rhtml-mode
+	url = git://github.com/eschulte/rhtml.git
+[submodule "vendor/zencoding-mode"]
+	path = vendor/zencoding-mode
+	url = git://github.com/chrisdone/zencoding.git
+[submodule "vendor/js2"]
+	path = vendor/js2
+	url = git://github.com/adolfosousa/emacs-js2-mode.git
+[submodule "vendor/js-comint"]
+	path = vendor/js-comint
+	url = git://github.com/adolfosousa/emacs-js-comint-mode.git
