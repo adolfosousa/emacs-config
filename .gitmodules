@@ -67,3 +67,6 @@
 [submodule "vendor/js-comint"]
 	path = vendor/js-comint
 	url = git://github.com/adolfosousa/emacs-js-comint-mode.git
+[submodule "vendor/paredit"]
+	path = vendor/paredit
+	url = git://github.com/emacsmirror/paredit.git
