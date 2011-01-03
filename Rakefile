@@ -6,9 +6,6 @@ task :install => [:init_submodules, :create_link]
 desc "Inits git submodules in order to install plugins"
 task :init_submodules do
   init_git_submodules
-  cd('vendor/rinari', :verbose => true)
-  init_git_submodules
-  go_back_twice
   cd('vendor/cedet', :verbose => true)
   system('make MAKEINFO=echo')
   system('make install')
