@@ -5,7 +5,6 @@
 (load (concat custom_path "bindings"))
 (load (concat custom_path "global"))
 
-(vendor 'rinari)
 (vendor 'markdown-mode)
 (vendor 'cheat)
 (vendor 'gist)
