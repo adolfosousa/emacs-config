@@ -29,5 +29,4 @@
 (load (concat custom_path "ruby-block"))
 (load (concat custom_path "igrep"))
 (load (concat custom_path "js2"))
-(load (concat custom_path "tpl-mode"))
 (load (concat custom_path "paredit"))
